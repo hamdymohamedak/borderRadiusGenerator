@@ -1,0 +1,44 @@
+section {
+  min-height: 100vh;
+}
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+* {
+  transition: 0.2s;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+@media (max-width: 425px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1600) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1601px) {
+  html {
+    font-size: 20px;
+  }
+}
