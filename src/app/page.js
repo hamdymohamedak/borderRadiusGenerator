@@ -26,20 +26,46 @@ export default function Home() {
 
   return (
     <section className={styles.homeSec}>
-      <div style={styling} className={styles.result}></div>
+      <div style={styling} className={styles.result}>
+        <div>TL</div>
+        <div>TR</div>
+        <div>BL</div>
+        <div>BR</div>
+      </div>
       <div style={{ color: "white", fontWeight: "bold" }}>
         CSS: border-radius: {oneValue}px {twoValue}px {theeValue}px {fourValue}
         px
       </div>
       <div style={{ color: "white", fontWeight: "bold" }}>
-        JSX: borderRadius: {oneValue}px {twoValue}px {theeValue}px {fourValue}
-        px
+        JSX: borderRadius: &ldquo;{oneValue}px {twoValue}px {theeValue}px{" "}
+        {fourValue}
+        px&ldquo;
       </div>
       <div className={styles.inputs}>
-        <input onChange={handleValue} type="number" />
-        <input onChange={handleSecoundValue} type="number" />
-        <input onChange={handleThreeValue} type="number" />
-        <input onChange={handleFourValue} type="number" />
+        <input
+          style={{ border: "2px solid red" }}
+          onChange={handleValue}
+          type="number"
+          placeholder="TL"
+        />
+        <input
+          style={{ border: "2px solid blue" }}
+          onChange={handleSecoundValue}
+          type="number"
+          placeholder="TR"
+        />
+        <input
+          style={{ border: "2px solid green" }}
+          onChange={handleThreeValue}
+          type="number"
+          placeholder="BL"
+        />
+        <input
+          style={{ border: "2px solid yellow" }}
+          onChange={handleFourValue}
+          type="number"
+          placeholder="BR"
+        />
       </div>
       <footer
         className={styles.footer}

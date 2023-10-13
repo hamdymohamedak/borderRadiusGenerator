@@ -33,6 +33,7 @@
 .result {
   height: 12rem;
   width: 12rem;
+  position: relative;
   background-image: linear-gradient(
     to right top,
     #9d9d9d,
@@ -42,6 +43,33 @@
     #0372ff
   );
 }
+.result :nth-child(1) {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: red;
+}
+.result :nth-child(2) {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: blue;
+}
+
+.result :nth-child(3) {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: yellow;
+}
+
+.result :nth-child(4) {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: green;
+}
+
 .footer :nth-child(n) {
   text-decoration: none;
   color: white;
