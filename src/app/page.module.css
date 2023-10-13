@@ -46,27 +46,27 @@
 .result :nth-child(1) {
   position: absolute;
   top: 0;
-  left: -10%;
+  left: -15%;
   background: red;
 }
 .result :nth-child(2) {
   position: absolute;
   top: 0;
-  right: -10%;
+  right: -15%;
   background: blue;
 }
 
 .result :nth-child(3) {
   position: absolute;
   bottom: 0;
-  left: -10%;
+  left: -15%;
   background: yellow;
 }
 
 .result :nth-child(4) {
   position: absolute;
   bottom: 0;
-  right:-10%;
+  right: -15%;
   background: green;
 }
 
